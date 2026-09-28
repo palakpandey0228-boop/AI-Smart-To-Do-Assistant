@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Smart To-Do Assistant | Palak Kumari</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><div><p class="eyebrow">STUDENT PRODUCTIVITY</p><h1>AI Smart To-Do Assistant</h1><p class="subtitle">Plan smarter, prioritise better and stay organised.</p></div><div class="author">Palak Kumari</div></header>
+<main class="container">
+<section class="card"><h2>Add a task</h2><div class="form-grid"><input id="taskInput" placeholder="e.g. Complete MongoDB notes"><select id="priorityInput"><option value="high">High priority</option><option value="medium" selected>Medium priority</option><option value="low">Low priority</option></select><input id="dateInput" type="date"><button id="addBtn">+ Add Task</button></div></section>
+<section class="stats"><div class="stat"><span id="totalCount">0</span><small>Total</small></div><div class="stat"><span id="pendingCount">0</span><small>Pending</small></div><div class="stat"><span id="doneCount">0</span><small>Completed</small></div><div class="stat"><span id="progressPercent">0%</span><small>Progress</small></div></section>
+<section class="card assistant"><div><p class="eyebrow">SMART ASSISTANT</p><h2>Task Priority Insight</h2><p id="insight">Add a few tasks and I’ll suggest what to focus on first.</p></div><button id="suggestBtn" class="secondary">Suggest next task</button></section>
+<section class="toolbar"><input id="searchInput" type="search" placeholder="Search tasks..."><select id="filterInput"><option value="all">All tasks</option><option value="pending">Pending</option><option value="completed">Completed</option><option value="high">High priority</option></select><button id="clearCompleted" class="danger">Clear completed</button></section>
+<section id="taskList" class="task-list"></section><p id="emptyState" class="empty">No tasks yet. Add your first task above.</p>
+</main>
+<footer>AI Smart To-Do Assistant · Built by Palak Kumari · HTML, CSS & JavaScript</footer>
+<script src="script.js"></script>
+</body>
+</html>
